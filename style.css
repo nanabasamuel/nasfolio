@@ -21,6 +21,9 @@
     --h3-font:             1.7rem;
 }
 
+html {
+    overflow-x: hidden;
+}
 body{
     background: var(--bg2-color);
     color: var(--text-color);
@@ -36,13 +39,14 @@ body{
 }
 
 .container{
-    padding: 2rem 5rem;
+    padding: 2rem 8rem;
 }
 
 .logo{
     color: var(--main-color);
     font-size: 25px;
     font-family: 700;
+    cursor: pointer;
     letter-spacing: 1px;
 }
 
@@ -51,10 +55,17 @@ nav span{
 }
 
 nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 8rem;
+    background: var(--second-text-color);
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 100;
 }
 
 nav ul li{
@@ -164,3 +175,45 @@ span {
 .home-btn:hover {
     transform: scale(0.9);
 }
+
+/* About Section Design */
+#about {
+    padding: 8rem 0;
+    background: var(--bg1-color);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 25%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 65%;
+}
+
+.heading {
+    font-size: 2.5rem;
+}
+
+.about-col-2 h3 {
+    font-size: 1.7rem;
+}
+
+.about-col-2 p {
+    font-size: 0.9rem;
+}
+
+.about-col-2 a {
+    margin: 20px 0 40px;
+}
+
