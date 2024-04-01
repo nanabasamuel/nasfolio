@@ -16,7 +16,7 @@
     --text-color:       #FFFFFF;
     --main-color:       #FCA311;  
     --second-main-color:#DC143C;
-    --btn-color:        #14213D;
+    --second-text-color:#14213D;
     --h1-font:             2.6rem;
     --h3-font:             1.7rem;
 }
@@ -112,6 +112,7 @@ span {
 }
 
 .home-content h1 {
+    color: var(--second-text-color);
     font-size: var(--h1-font);
     font-weight: 700;
     line-height: 1.3;
@@ -138,7 +139,7 @@ span {
 
 .social-media a:hover {
     background: var(--main-color);
-    color: var(--btn-color);
+    color: var(--second-text-color);
     box-shadow: 0 0 1rem var(--main-color);
 }
 
@@ -154,7 +155,7 @@ span {
     background: var(--main-color);
     border-radius: 2rem;
     font-size: 0.8rem;
-    color: var(--btn-color);
+    color: var(--second-text-color);
     letter-spacing: 0.1rem;
     font-weight: 500;
     transition: all 0.45s ease;
