@@ -366,3 +366,102 @@ hr {
 .portfolio-layer a i {
     color: var(--second-text-color);
 }
+
+/* Contact Section Design */
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-left h2 {
+   font-size: 2.6rem; 
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.contact-left p i {
+    color: var(--main-color);
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 25px;
+    margin-right: 10px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: var(--main-color);
+    transform: translateY(-5px);
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: var(--bg2-color);
+    padding: 10px;
+    margin: 1% 0;
+    color: var(--text-color);
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+form .home-btn {
+    border: none;
+    outline: none;
+    padding: 12px 50px;
+    font-size: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 9%;
+    background: var(--bg2-color);
+}
+
+.footer-text p {
+    font-size: 13px;   
+}
+
+.footer-iconTop {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2% .7%;
+    background: var(--main-color);
+    border-radius: 0.4rem;
+    transition: transform 0.5s;
+}
+
+.footer-iconTop:hover {
+    color: var(--main-color);
+    transform: translateY(-5px);
+}
+
+.footer-iconTop a i {
+    font-size: 1.2rem;
+    color: var(--second-text-color);
+}
