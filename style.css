@@ -60,7 +60,7 @@ nav{
     left: 0;
     width: 100%;
     padding: 1rem 8rem;
-    background: var(--bg2-color));
+    background: var(--bg2-color);
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
