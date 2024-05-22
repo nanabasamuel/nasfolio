@@ -1,3 +1,12 @@
+// Toggle icon nav ul
+let menuIcon = document.querySelector('#menu-icon');
+let navul = document.querySelector('nav ul');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('ri-arrow-up-wide-line');
+    navul.classList.toggle('active');
+};
+
 // Scroll Sections Active lInk
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('section');
@@ -22,4 +31,21 @@ window.onscroll = () => {
     let container = document.querySelector('container');
 
     container.classList.toggle('sticky', window.scrollY > 100);
+
+    // Remove Toggle icon and navul when click navul link (scroll)
+    // Add a click event listener to the menu icon
+    menuIcon.addEventListener('click', () => {
+        // Toggle the 'ri-arrow-up-wide-line' class on the menu icon
+        menuIcon.classList.toggle('ri-arrow-up-wide-line');
+    
+        // Toggle the 'active' class on the navigation list
+        navul.classList.toggle('active');
+
+        // If the 'active' class is present, remove the 'ri-arrow-down-line' class, else add it
+        if (navul.classList.contains('active')) {
+            menuIcon.classList.remove('ri-arrow-down-line');
+        } else {
+            menuIcon.classList.add('ri-arrow-down-line');
+        }
+    });
 };

@@ -1,0 +1,449 @@
+/* ------- Breakpoints css for small screens------- */
+:root{
+    --bg1-color:        #000000; 
+    --bg2-color:        #080808;
+    --text-color:       #FFFFFF;
+    --main-color:       #FCA311;  
+    --second-main-color:#DC143C;
+    --second-text-color:#14213D;
+    --h1-font:             2.6rem;
+    --h3-font:             1.7rem;
+}
+
+@media (max-width: 1320px) {
+    /* html {
+        font-size: 55%;
+    } */
+
+    .home{
+        padding-top: 8rem;
+    }
+
+    .contact {
+        padding-top: 5rem;
+    }
+}
+
+@media (max-width: 1135px) {
+    .portfolio-layer h4 {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-layer p {
+        font-size: 0.8rem;
+        margin: 0.2rem 0 1rem;
+    }
+}
+
+@media (max-width: 1085px) {
+    nav{
+        padding: 0.5rem 2rem;
+    }
+
+    .home {
+        position: absolute;
+        left: 0;
+        padding: 8rem 2rem;
+    }
+
+    #about .container{
+        position: relative;
+        padding: 0 2rem;
+    }
+
+    #services {
+        padding: 2rem 2rem; 
+    }
+
+    .services-list {
+        grid-gap: 25px;
+    }
+
+    .portfolio {
+        padding: 2rem 2rem;
+    }
+
+    .portfolio-container {
+        margin-top: 4rem;
+        gap: 2.5rem;
+    }
+
+    .footer {
+        padding: 1rem 3%;
+    }
+}
+
+@media (max-width: 1025px) {
+    .heading {
+        font-size: 2rem;
+    }
+    
+    .about-col-2 h3 {
+        font-size: 1.2rem;
+    }
+    
+    .about-col-2 p {
+        font-size: 0.8rem;
+    }
+    
+    .about-col-2 a {
+        margin: 10px 0 20px;
+    }
+}
+
+@media (max-width: 1005px) {
+    .home-content h1 {
+        font-size: 2rem;
+        line-height: 1.1;
+    }  
+
+    .home-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .home-content p {
+        font-size: 0.8rem;
+    }
+
+    .social-media a {
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .home-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.7rem;
+    }
+
+    .services-list {
+        grid-gap: 20px;
+    }
+
+    .services-list div h3 {
+        font-size: 1rem;
+    }
+
+    .contact-left h2 {
+        font-size: 2.1rem; 
+     }
+
+     form .home-btn {
+        padding: 10px 40px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 950px) {
+    #menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg1-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba;
+        display: none;
+    }
+
+    nav ul.active {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        font-size: 0.8rem;
+        margin: 1rem 0;
+    }
+
+    nav ul li a:hover::after{
+        display: none;
+    }
+}
+
+@media (max-width: 853px) {
+    .stretch-grid {
+        grid-column: 3 / 1;
+    }
+
+    .contact .container {
+        padding: 2rem 4rem;
+    }
+
+    .contact-left h2 {
+        font-size: 1.8rem; 
+     }
+     
+     .contact-left p{
+         margin-top: 15px;
+         font-size: 12px;
+     }
+     
+     .contact-left p i {
+         font-size: 15px;
+     }
+     
+     .social-icons {
+         margin-top: 10px;
+     }
+     
+     .social-icons a {
+         font-size: 20px;
+     }
+
+     form .home-btn {
+        padding: 8px 25px;
+        font-size: 12px;
+    }
+    form input, form textarea {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 820px) {
+    .portfolio-container {
+        gap: 2rem;
+    }
+
+    .portfolio-layer h4 {
+        font-size: 1rem;
+    }
+
+    .portfolio-layer p {
+        margin: 0.1rem 0 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-layer h4 {
+        font-size: 1.5rem;
+    }
+    
+    .portfolio-layer p {
+        font-size: 1rem;
+        margin: 0.2rem 0 1rem;
+    }
+    
+    .portfolio-layer a {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media (max-width: 765px) {
+    .about-col-2 h3 {
+        font-size: 15px;
+    }
+    
+    .about-col-2 p {
+        font-size: 0.8rem;
+    }
+
+    .contact .container {
+        padding: 2rem 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    #about {
+        padding-top: 0;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .about-col-1 img {
+        width: 60%;
+        margin: 1rem 20%;
+    }
+
+    .contact {
+        min-height: auto;
+
+    }
+
+    .contact-left p, .social-icons {
+        display: none;
+    }
+
+    .contact-left h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    form .home-btn {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media (max-width: 660px) {
+    .portfolio-container {
+        gap: 1rem;
+    }
+    .portfolio-layer h4 {
+        font-size: 0.9rem;
+    }
+
+    .portfolio-layer p {
+        font-size: 0.8rem; 
+    }
+}
+
+@media (max-width: 625px) {
+    #header{
+        background-image: none;
+    }
+}
+
+@media (max-width: 570px) {
+    .services-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-layer h4 {
+        font-size: 1.5rem;
+    }
+    
+    .portfolio-layer p {
+        font-size: 1rem;
+        margin: 0.2rem 0 1rem;
+    }
+
+    .portfolio-layer a {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .home {
+        padding-top: 10rem;
+    }
+    .home-content h1 {
+        font-size: 1.5rem;
+        line-height: 0.9;
+    }  
+
+    .home-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .home-content p {
+        font-size: 0.8rem;
+    }
+
+    .social-media a {
+        width: 1.6rem;
+        height: 1.6rem;
+        font-size: 0.6rem;
+    }
+
+    .home-btn {
+        padding: 0.4rem .8rem;
+        font-size: 0.7rem;
+    }
+
+    .home .social-media a {
+        border: 0.1rem solid var(--main-color);
+    }
+
+    nav ul {
+        left: 3%;
+    }    
+}
+
+@media (max-width: 430px) {
+    #header {
+        background-image: url(Images/user3.png);
+    }
+
+    .home {
+            padding: 15rem 1rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .home-content h1 {
+        font-size: 1.2rem;
+    }  
+
+    .home-content h3 {
+        font-size: 1rem;
+    }
+
+    .home-content p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .portfolio-layer h4 {
+        font-size: 1.3rem;
+    }
+    
+    .portfolio-layer p {
+        font-size: 0.9rem;
+    }
+
+    .portfolio-layer a {
+        width: 2.5rem;
+        height: 2.5rem;
+    } 
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    nav ul {
+        left: 5%;
+    }  
+}
+
+@media (max-width: 344px) {
+    .footer-text p {
+        font-size: 10px;   
+    }
+}
+
+@media (max-width: 325px) {
+    .home-content h1 {
+        font-size: 1rem;
+    }  
+
+    .home-content h3 {
+        font-size: 0.8rem;
+    }
+
+    .home-content p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 310px) {
+    .home-content h1 {
+        line-height: 1.5;
+    }
+    .portfolio-layer p {
+        font-size: 0.75rem;
+    }
+}

@@ -22,6 +22,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 body{
@@ -98,9 +99,11 @@ nav ul li a.active {
 }
 
 #menu-icon {
-    font-size: 3.6rem;
+    font-size: 1.2rem;
     color: var(--text-color);
     display: none;
+    margin-top: 0.8rem;
+    cursor: pointer;
 }
 
 /* Home section */
@@ -349,7 +352,7 @@ hr {
 }
 
 .portfolio-layer p {
-    font-size: 1.rem;
+    font-size: 1rem;
     margin: 0.2rem 0 1rem;
 }
 
@@ -450,7 +453,7 @@ form .home-btn {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: .2% .7%;
+    padding: .1% 2%;
     background: var(--main-color);
     border-radius: 0.4rem;
     transition: transform 0.5s;
