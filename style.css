@@ -198,6 +198,19 @@ span {
 .about-col-1 img {
     width: 100%;
     border-radius: 15px;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+   0% {
+    transform: translateY(0);
+   }
+   50% {
+    transform: translateY(-2.4rem);
+   }
+   100% {
+    transform: translateY(0);
+   } 
 }
 
 .about-col-2 {
@@ -371,6 +384,10 @@ hr {
 }
 
 /* Contact Section Design */
+.contact {
+    padding-top: 8rem;
+}
+
 .contact-left {
     flex-basis: 35%;
 }
@@ -453,7 +470,7 @@ form .home-btn {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: .1% 2%;
+    padding: .1% .8%;
     background: var(--main-color);
     border-radius: 0.4rem;
     transition: transform 0.5s;

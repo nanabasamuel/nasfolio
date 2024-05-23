@@ -49,3 +49,18 @@ window.onscroll = () => {
         }
     });
 };
+
+// scroll reveal
+ScrollReveal({
+    reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
+
+ScrollReveal().reveal('.home-content, .heading, .contact-left', { origin: 'top' });
+ScrollReveal().reveal('.row img, .services-container, .portfolio-container, .contact-right', { origin: 
+    'bottom' });
+ScrollReveal().reveal('.home-content h1', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-col-2 p, .about-col-2 h3, .about-col-2 a', { origin: 
+    'right' });
