@@ -63,4 +63,13 @@ ScrollReveal().reveal('.row img, .services-container, .portfolio-container, .con
     'bottom' });
 ScrollReveal().reveal('.home-content h1', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-col-2 p, .about-col-2 h3, .about-col-2 a', { origin: 
-    'right' });
+'right' });
+
+// typed js
+const typed = new Typed('.multiple-text', {
+    strings: ['Frontend Developer', 'Software Developer', 'Blogger'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
