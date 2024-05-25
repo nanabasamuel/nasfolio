@@ -221,13 +221,15 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
-                        <input type="phone" name="phone" placeholder="Your Phone Number" required>
+                        <input type="phone" name="Phone" placeholder="Your Phone Number" required>
                         <textarea name="Message" rows="6" placeholder="How Can I Help You?"></textarea>
                         <button type="submit" class="home-btn">Submit</button>
                     </form>
+
+                    <div id="msg"></div>
                 </div>
             </div>
         </div> 
@@ -248,6 +250,27 @@
 
     <!-- type js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Google sheet script -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxsqCnlEqdB8jtJMLMfIHf_LOiMqgaHDzxyNk95qUph_M2F_SFgy8JWQRfat9DhB3nnCA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+               msg.innerHTML = "Sent"
+               setTimeout(function() {
+                  msg.innerHTML = ""  
+               },5000) 
+
+               form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 
     <!-- js link -->
     <script src="/script.js"></script>

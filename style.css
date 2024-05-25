@@ -485,3 +485,10 @@ form .home-btn {
     font-size: 1.2rem;
     color: var(--second-text-color);
 }
+
+#msg {
+    color: #EDEADE;
+    margin: 5px 4rem;
+    font-size: 12px;
+    display: block;
+}
